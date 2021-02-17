@@ -2,7 +2,7 @@
 # tasks file for devserver_tools
 - name: Ensure GIT and MAVEN packages are present
   apt:
-    name: {{ item }}
+    name: "{{ item }}"
     state: installed
     update_cache: yes
   with_items:
