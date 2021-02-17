@@ -1,0 +1,4 @@
+---
+# defaults file for webserver_tomcat9
+src_path: /home/pkhramchenkov/boxfuse/target
+dest_path: /var/lib/tomcat9/webapps

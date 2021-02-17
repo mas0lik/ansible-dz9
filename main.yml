@@ -1,0 +1,17 @@
+---
+- name: Prepare STAGING environment
+  hosts: staging
+  become: yes
+
+  roles:
+    - devserver_jdk
+    - devserver_tools
+    - builder_boxfuse
+
+- name: Prepare PRODUCTION environment
+  hosts: production
+  become: yes
+
+  roles:
+    - appserver_jre
+    - webserver_tomcat9

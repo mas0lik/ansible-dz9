@@ -1,0 +1,7 @@
+---
+# tasks file for appserver_jre
+- name: Ensure default JRE package is present
+  apt:
+    name: default-jre
+    state: present
+    update_cache: yes

@@ -1,0 +1,4 @@
+---
+# defaults file for builder_boxfuse
+webapp_repo: 'https://github.com/boxfuse/boxfuse-sample-java-war-hello.git'
+dest_path: /home/pkhramchenkov/boxfuse

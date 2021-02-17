@@ -1,0 +1,15 @@
+---
+# tasks file for webserver_tomcat9
+- name: Ensure TOMCAT package is present
+  apt:
+    name: tomcat9
+    state: present
+    update_cache: yes
+
+- name: Ensure WEBAPP is present
+  synchronize:
+    src: {{ src_path }}/hello-1.0.war
+    dest: {{ dest_path }}
+  delegate_to: 35.224.117.14
+  notify:
+    - restart tomcat9
