@@ -2,8 +2,8 @@
 # tasks file for builder_boxfuse
 - name: Ensure boxfuse git repository cloned to host
   git:
-    repo: {{ webapp_repo }}
-    dest: {{ dest_path }}
+    repo: "{{ webapp_repo }}"
+    dest: "{{ dest_path }}"
     clone: yes
 
 - name: Ensuere webapp is built
